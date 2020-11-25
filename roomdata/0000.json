@@ -1,0 +1,13 @@
+{
+  "roomName": "0000",
+  "roomNumber": 0,
+  "roomTitle": "Starting Point: Welcome, adventurer!",
+  "roomDescription": "This is the starting room in TechnoMUD.  Go where thou wilt.",
+  "exitPointers": { "North": "0001", "East": "0002", "West": "0003" },
+  "staticCharacters": [],
+  "staticMonsters": [],
+  "randomMonsterPerc": 0.0,
+  "staticTreasure": [],
+  "randomTreasurePerc": 0.0,
+  "roomItems": [ "sword001", "dagger001" ]
+}
