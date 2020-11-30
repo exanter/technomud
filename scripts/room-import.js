@@ -26,7 +26,7 @@ let eventEmitter = new events.EventEmitter();
 
 var exitListener = function exitListener() {
   console.log("Processing Finished.");
-//  process.exit(0);
+  process.exit(0);
 }
 
 eventEmitter.addListener('processingdone', exitListener);
@@ -53,9 +53,10 @@ files.forEach(function (file) {
       client.quit();
       process.exit(1);
     }
-  });
 
-  ct = ct + 1;
-  if(ct == filect) { eventEmitter.emit('processingdone'); }
+    ct = ct + 1;
+    if(ct == filect) { eventEmitter.emit('processingdone'); }
+  });
 });
+
 
